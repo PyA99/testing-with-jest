@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "author": "Py",
-  "type": "commonjs",
   "main": "src/index.js",
   "directories": {
     "test": "tests"
@@ -25,6 +24,7 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "^14.0.0",
+    "jest": "^30.4.2",
     "webpack": "^5.106.2",
     "webpack-cli": "^7.0.2"
   }
