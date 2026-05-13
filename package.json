@@ -1,0 +1,23 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "testing with jest",
+  "homepage": "https://github.com/PyA99/testing-with-jest#readme",
+  "bugs": {
+    "url": "https://github.com/PyA99/testing-with-jest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyA99/testing-with-jest.git"
+  },
+  "license": "MIT",
+  "author": "Py",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  }
+}
