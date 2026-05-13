@@ -19,8 +19,6 @@ const stack = require('../src/stack');
 // });
 
 test('stack size increases after push', () => {
-  const stack = new Stack();
-
   stack.push(10);
 
   expect(stack.size()).toBe(2);
