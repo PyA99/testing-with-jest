@@ -22,5 +22,5 @@ test('pop returns the latest pushed value', () => {
     stack.push('äpple');
     stack.push('banan');
 
-    expect(stack.pop()).toBe('päron');
+    expect(stack.pop()).toBe('banan');
 });
