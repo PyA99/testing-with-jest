@@ -34,3 +34,24 @@ afterAll(async() => {
 //         await alert.accept();
 //     });
 // });
+
+test('pop button removes top element', async () => {
+
+    let pushButton = await driver.findElement(By.id('push'));
+
+    await pushButton.click();
+
+    let alert = await driver.switchTo().alert();
+
+    await alert.sendKeys('Mango');
+
+    await alert.accept();
+
+    let popButton = await driver.findElement(By.id('pop'));
+
+    await popButton.click();
+
+    let stackText = await driver.findElement(By.id('top_of_stack')).getText();
+
+    expect(stackText).toEqual('Mango');
+});

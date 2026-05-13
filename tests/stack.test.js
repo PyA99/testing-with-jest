@@ -18,8 +18,9 @@ const stack = require('../src/stack');
 //     expect(stack.peek()).toBe(42);
 // });
 
-test('stack size increases after push', () => {
-  stack.push(10);
+test('pop returns the latest pushed value', () => {
+    stack.push('äpple');
+    stack.push('banan');
 
-  expect(stack.size()).toBe(2);
+    expect(stack.pop()).toBe('päron');
 });
